@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100vw;
+}
+
+#main {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  top: 10%;
+  /* background-color: brown; */
+}
+
+#page1 {
+  position: relative;
+  height: 69%;
+  width: 50%;
+  background-color: #75eb89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+#page1>h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#page1>input {
+  /* width: 40%; */
+  /* height: 15%; */
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  border: none;
+}
+
+#page1>div>label {
+  font-size: 25px;
+}
+
+#page1>div>select {
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#page1>button {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#myBio {
+  position: relative;
+  min-height: 40vh;
+  width: 100vw;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-bottom: none;
+}
+
+.upper {
+  height: 30%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  /* background-color: red; */
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  left: 13.7%;
+  /* background-color: #75eb89; */
+}
+
+#left>img {
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+#left>p {
+  font-size: 20px;
+}
+
+#right {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  /* background-color: red; */
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.spaceY {
+  margin-bottom: 15px;
+}
+
+.spaceX {
+  margin-left: 20px;
+}
+
+#repos {
+  min-height: 40vh;
+  width: 100vw;
+  padding: 40px 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #fff;
+  gap: 40px;
+}
+
+.repo {
+  width: 500px;
+  max-height: 200px;
+  background-color: #fff;
+  border: 1px solid black;
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 30px;
+}
+
+.repo>h1 {
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.repo>h3 {
+  font-size: 20px;
+  /* display: inline; */
+  /* background-color: red; */
+}
+
+.repo>h4 {
+  font-size: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  background-color: rgb(87, 87, 255);
+  margin-top: 5px;
+}
+
+#pages {
+  background-color: #fff;
+  height: 20vh;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  /* display: flex; */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: rgb(87, 87, 255);
+  color: white;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: rgb(27, 27, 169);
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#load1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+#load2 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
